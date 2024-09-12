@@ -10,7 +10,18 @@ html, body {
     width: 100%;
     height: 100%;
 }
+#crsr{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: 2px solid #fff;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50% , -50%);
 
+}
 #loader{
   
     height: 100%;
@@ -57,7 +68,7 @@ html, body {
     font-weight: 900;
     /* animation-name: anime; */
     opacity: 0;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -103,4 +114,63 @@ html, body {
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.4vw 7.8vw;
+}
+
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav-part2 h4 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: brown; */
+    width: 71%;
+    margin-left: 29%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    
+}
+.hero:nth-child(2){
+    margin-top: 10vh;
+}
+.hero h1{
+    font-size:7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height:7.2vw;
+}
+.hero h2{
+    font-size:7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height:7.2vw;
+}
+.hero h3{
+    font-size:7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height:7.2vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    font-weight: 500;
+    color: transparent;
 }
