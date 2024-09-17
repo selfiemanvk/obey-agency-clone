@@ -64,8 +64,8 @@ function loadingAnimation(){
     
     t1.to("#loader",{
         opacity : 0,
-        duration : 0.2,
-        delay: 0.5
+        duration : 6,
+        delay: 3
     })
     
     t1.from("#page1",{
